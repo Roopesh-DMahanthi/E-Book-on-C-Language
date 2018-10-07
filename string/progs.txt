@@ -1,0 +1,11 @@
+
+
+     1 - Program to find length of entered string using strlen() function
+     2 - Program to copy 1st 3 characters from entered string to another using strncpy()
+     3 - Program to compare 2 strings using strcmp()
+     4 - Program to concatenate 2 strings using strcat()
+     5 - Program to print numbers in different formats using itoa()
+
+
+
+

@@ -1,0 +1,7 @@
+
+
+     1 - Program of reversing the array elements
+     2 - Program to reverse string without inbuilt
+     3 - Program to copy string to other without inbuilt
+     4 - Program to sorting of array elements
+     5 - Program for a Menu Driven method

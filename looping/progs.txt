@@ -1,0 +1,10 @@
+
+
+     1 - Program of counting even odd numbers till 0 is inputted
+     2 - Program to print Mathematical Table of inputted number
+     3 - Program to print string length without inbuilt function
+     4 - Program to print prime numbers till the inputted number
+     5 - Program to print some pattern with '*'
+
+
+

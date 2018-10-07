@@ -1,0 +1,164 @@
+Character set
+The basic C source character set includes the following characters:
+Lowercase and uppercase letters of ISO Basic Latin Alphabet: a–z A–Z
+Decimal digits: 0–9
+Graphic characters: ! " # % & ' ( ) * + , - . / : ; < = > ? [ \ ] ^ _ { | } ~
+Whitespace characters: space, horizontal tab, vertical tab, form feed, newline
+Newline indicates the end of a text line; it need not correspond to an actual single character, although for convenience C treats it as one.
+Additional multi-byte encoded characters may be used in string literals, but they are not entirely portable. The latest C standard (C11) allows multi-national Unicode characters to be embedded portably within C source text by using \uXXXX or \UXXXXXXXX encoding (where the X denotes a hexadecimal character), although this feature is not yet widely implemented.
+The basic C execution character set contains the same characters, along with representations for alert, backspace, and carriage return. Run-time support for extended character sets has increased with each revision of the C standard.
+Reserved words
+C89 has 32 reserved words, also known as keywords, which are the words that cannot be used for any purposes other than those for which they are predefined:
+auto
+break
+case
+char
+const
+continue
+default
+do
+double
+else
+enum
+extern
+float
+for
+goto
+if
+int
+long
+register
+return
+short
+signed
+sizeof
+static
+struct
+switch
+typedef
+union
+unsigned
+void
+volatile
+while
+
+Identifiers
+A C identifier is a name used to identify a variable, function, or any other user-defined item. An identifier starts with a letter A to Z, a to z, or an underscore '_' followed by zero or more letters, underscores, and digits (0 to 9).
+
+C does not allow punctuation characters such as @, $, and % within identifiers. C is a case-sensitive programming language. Thus, Manpower and manpower are two different identifiers in C.
+
+Whitespace in C
+A line containing only whitespace, possibly with a comment, is known as a blank line, and a C compiler totally ignores it.
+
+Whitespace is the term used in C to describe blanks, tabs, newline characters and comments. Whitespace separates one part of a statement from another and enables the compiler to identify where one element in a statement, such as int, ends and the next element begins.
+
+Data types in c refer to an extensive system used for declaring variables or functions of different types. The type of a variable determines how much space it occupies in storage and how the bit pattern stored is interpreted.
+
+The types in C can be classified as follows -
+
+S.N.	Types & Description
+1	
+Basic Types
+
+They are arithmetic types and are further classified into: (a) integer types and (b) floating-point types.
+
+2	
+Enumerated types
+
+They are again arithmetic types and they are used to define variables that can only assign certain discrete integer values throughout the program.
+
+3	
+The type void
+
+The type specifier void indicates that no value is available.
+
+4	
+Derived types
+
+They include (a) Pointer types, (b) Array types, (c) Structure types, (d) Union types and (e) Function types.
+
+The array types and structure types are referred collectively as the aggregate types. The type of a function specifies the type of the function's return value. We will see the basic types in the following section, where as other types will be covered in the upcoming chapters.
+
+Integer Types
+The following table provides the details of standard integer types with their storage sizes and value ranges -
+
+Type	Storage size	Value range
+char	1 byte	-128 to 127 or 0 to 255
+unsigned char	1 byte	0 to 255
+signed char	1 byte	-128 to 127
+int	2 or 4 bytes	-32,768 to 32,767 or -2,147,483,648 to 2,147,483,647
+unsigned int	2 or 4 bytes	0 to 65,535 or 0 to 4,294,967,295
+short	2 bytes	-32,768 to 32,767
+unsigned short	2 bytes	0 to 65,535
+long	4 bytes	-2,147,483,648 to 2,147,483,647
+unsigned long	4 bytes	0 to 4,294,967,295
+To get the exact size of a type or a variable on a particular platform, you can use the sizeof operator. The expressions sizeof(type) yields the storage size of the object or type in bytes.
+
+Floating-Point Types
+The following table provide the details of standard floating-point types with storage sizes and value ranges and their precision -
+
+Type	Storage size	Value range	Precision
+float	4 byte	1.2E-38 to 3.4E+38	6 decimal places
+double	8 byte	2.3E-308 to 1.7E+308	15 decimal places
+long double	10 byte	3.4E-4932 to 1.1E+4932	19 decimal places
+The header file float.h defines macros that allow you to use these values and other details about the binary representation of real numbers in your programs. 
+
+The void Type
+The void type specifies that no value is available. It is used in three kinds of situations -
+
+S.N.	Types & Description
+1	
+Function returns as void
+
+There are various functions in C which do not return any value or you can say they return void. A function with no return value has the return type as void. For example, void exit (int status);
+
+2	
+Function arguments as void
+
+There are various functions in C which do not accept any parameter. A function with no parameter can accept a void. For example, int rand(void);
+
+3	
+Pointers to void
+
+A pointer of type void * represents the address of an object, but not its type. For example, a memory allocation function void *malloc( size_t size ); returns a pointer to void which can be casted to any data type.
+
+A variable is nothing but a name given to a storage area that our programs can manipulate. Each variable in C has a specific type, which determines the size and layout of the variable's memory; the range of values that can be stored within that memory; and the set of operations that can be applied to the variable.
+
+The name of a variable can be composed of letters, digits, and the underscore character. It must begin with either a letter or an underscore. Upper and lowercase letters are distinct because C is case-sensitive. Based on the basic types explained in the previous chapter, there will be the following basic variable types -
+
+Type	Description
+char	Typically a single octet(one byte). This is an integer type.
+int	The most natural size of integer for the machine.
+float	A single-precision floating point value.
+double	A double-precision floating point value.
+void	Represents the absence of type.
+C programming language also allows to define various other types of variables, which we will cover in subsequent chapters like Enumeration, Pointer, Array, Structure, Union, etc. For this chapter, let us study only basic variable types.
+
+Variable Definition in C
+A variable definition tells the compiler where and how much storage to create for the variable. A variable definition specifies a data type and contains a list of one or more variables of that type as follows -
+
+type variable_list;
+Here, type must be a valid C data type including char, w_char, int, float, double, bool, or any user-defined object; and variable_list may consist of one or more identifier names separated by commas. Some valid declarations are shown here -
+
+int    i, j, k;
+char   c, ch;
+float  f, salary;
+double d;
+The line int i, j, k; declares and defines the variables i, j, and k; which instruct the compiler to create variables named i, j and k of type int.
+
+Variables can be initialized (assigned an initial value) in their declaration. The initializer consists of an equal sign followed by a constant expression as follows -
+
+type variable_name = value;
+Some examples are -
+
+extern int d = 3, f = 5;    // declaration of d and f. 
+int d = 3, f = 5;           // definition and initializing d and f. 
+byte z = 22;                // definition and initializes z. 
+char x = 'x';               // the variable x has the value 'x'.
+For definition without an initializer: variables with static storage duration are implicitly initialized with NULL (all bytes have the value 0); the initial value of all other variables are undefined.
+
+Variable Declaration in C
+A variable declaration provides assurance to the compiler that there exists a variable with the given type and name so that the compiler can proceed for further compilation without requiring the complete detail about the variable. A variable definition has its meaning at the time of compilation only, the compiler needs actual variable definition at the time of linking the program.
+
+A variable declaration is useful when you are using multiple files and you define your variable in one of the files which will be available at the time of linking of the program. You will use the keyword extern to declare a variable at any place. Though you can declare a variable multiple times in your C program, it can be defined only once in a file, a function, or a block of code.
+

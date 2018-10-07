@@ -1,0 +1,11 @@
+
+
+     1 - Program of Swapping of Two numbers using Arthimetic operators
+     2 - Program to show total minutes and seconds by accepting hours
+     3 - Program to print DOB and Roll number by accepting Registration number
+     4 - Program to print result based on attendance, CA , MTE and ETE
+     5 - Program about calculating Area of few geometric figures
+     6 - Program of Basic Calculator
+
+
+

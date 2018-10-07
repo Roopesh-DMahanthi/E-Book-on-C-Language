@@ -1,0 +1,10 @@
+
+
+     1 - Program of check whether a number is even or odd
+     2 - Program to compare age of two persons
+     3 - Program for Calculator based on switch case
+     4 - Program to print average of 3 subjects
+     5 - Program to print Electricity Bill
+
+
+

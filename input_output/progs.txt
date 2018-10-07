@@ -1,0 +1,8 @@
+
+
+     1 - Program to Input characters using different functions
+     2 - Program to seperate the Inputted value to its responding type and print its type
+
+
+
+

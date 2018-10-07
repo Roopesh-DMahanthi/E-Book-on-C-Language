@@ -1,0 +1,22 @@
+Computer graphics is one of the most interesting and useful topics of computers and c language.Everywhere information is conveyed in the form of pictures,which needs computer graphics understanding.
+
+The header file graphics.h is to be included at the beginning of the program. The header file comprises the definition and explanations of all the graphic functions.
+To switch over to graphics mode, a function initgraph() must be invoked.It selects the best resolution and puts the corresponding number in graphics mode.
+
+Few graphics functions :
+
+- initgraph()
+- closegraph()
+- restorecrtmode()
+- graphresult()
+- getmaxx() and getmaxy
+- line()
+- circle()
+- arc()
+- ellipse()
+- bar()
+- setcolor()
+- outtextxy()
+- settextstyle()
+- settextjustify()
+- getcolor()

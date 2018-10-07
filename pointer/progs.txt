@@ -1,0 +1,9 @@
+
+
+     1 - Program to print Address of a variable using pointer variable
+     2 - Program to store address of a variable into another 
+	 pointer and its address to another pointer
+     3 - Program to swap 2 numbers using call by reference
+
+
+

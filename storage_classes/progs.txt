@@ -1,0 +1,6 @@
+
+
+     1 - Program to show scope of a global declaration
+     2 - Program to show static variable life and scope
+     3 - Program to show auto variable life and scope
+     4 - Program to show scope level of some variables
